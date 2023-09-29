@@ -124,10 +124,11 @@ const CardDetail = () => {
             ) : null}
           </div>
         </div>
-        {!similarTvShowLoading ? (
+        
+      </div>
+      {!similarTvShowLoading ? (
           <CardList data={similarTvShowData} title={"Similar Shows"} />
         ) : null}
-      </div>
     </>
   );
 };

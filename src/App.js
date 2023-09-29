@@ -11,12 +11,14 @@ import TvShows from "./pages/TVShow";
 import SearchResults from "./pages/SearchResults";
 import TvShowsDetail from "./pages/TVShow/CardDetail";
 import MoviesDetail from "./pages/Movie/CardDetail"
+import HomeDetails from "./pages/Home/CardDetail"
 function App() {
   return (
     <div className="App">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/home/:id" element={<HomeDetails />} />
         <Route path="/movies" element={<Movies />} />
         <Route path="/movies/:id" element={<MoviesDetail />} />
         <Route path="/tv-shows" element={<TvShows />} />

@@ -15,6 +15,11 @@ import {
   getTVShowByIdReducer,
   getSimilarTVShowReducer,
 } from "./tv-shows";
+import {
+  trendingAllReducer,
+  trendingMoviesReducer,
+  trendingTVReducer,
+} from "./home";
 
 const store = configureStore({
   reducer: {
@@ -30,6 +35,9 @@ const store = configureStore({
     getMovieById: getMovieByIdReducer,
     getSimilarTVShow: getSimilarTVShowReducer,
     getSimilarMovie: getSimilarMovieReducer,
+    trendingAll: trendingAllReducer,
+    trendingMovies: trendingMoviesReducer,
+    trendingTV: trendingTVReducer,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
