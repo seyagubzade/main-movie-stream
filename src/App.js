@@ -23,7 +23,6 @@ function App() {
         <Route path="/movies/:id" element={<MoviesDetail />} />
         <Route path="/tv-shows" element={<TvShows />} />
         <Route path="/tv-shows/:id" element={<TvShowsDetail />} />
-        {/* <Route path="/card/:id" element={<CardDetails />} /> */}
         <Route path="/search/:keyword" element={<SearchResults />} />
 
         {/* Must work on Home Section 

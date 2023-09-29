@@ -107,7 +107,7 @@ const ImageSlider = ({ slides }) => {
             <p className="sc-desc">
             {slides[currentIndex].overview}
             </p>
-            <Link to={`/card/${slides[currentIndex].id}`} className="btn btn-radius btn-sc-action btn-sc-play"> 
+            <Link to={`/home/${slides[currentIndex].id}`} className="btn btn-radius btn-sc-action btn-sc-play"> 
              
                 See More <i className="fa-regular fa-arrow-right"></i>
               
